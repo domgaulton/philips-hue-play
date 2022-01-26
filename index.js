@@ -71,8 +71,6 @@ const hexToXYConversion = (hex) => {
   green = getGammaCorrectedValue(green);
   blue = getGammaCorrectedValue(blue);
 
-  
-
   let x = red * 0.649926 + green * 0.103455 + blue * 0.197109;
   let y = red * 0.234327 + green * 0.743075 + blue * 0.022598;
   let z = red * 0.0000000 + green * 0.053077 + blue * 1.035763;
@@ -95,9 +93,5 @@ const hexToXYConversion = (hex) => {
 
 // getAllLights();
 
-// console.log(hexToXYConversion('#FF0000'))
-
-// id, on/off, saturation, brightness, hsl colour
-// changeLight(3, true, 0, 25, 270);
+// id, on/off, saturation, brightness, hex colour
 changeLight(6, true, 100, 100, '#FF0000');
-// changeLight(7, true, 100, 100, #FF0000);
