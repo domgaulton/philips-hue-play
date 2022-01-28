@@ -95,6 +95,4 @@ const hexToXYConversion = (hex) => {
 // getAllLights();
 
 // id, on/off, saturation, brightness, hex colour
-changeLight(6, false, 100, 100, '#FF0000');
-
-browserScripts();
+changeLight(6, true, 100, 100, '#FFFFFF');
