@@ -1,6 +1,7 @@
-const axios = require('axios');
-require('dotenv').config();
+import axios from 'axios';
+import dotenv from 'dotenv';
 
+dotenv.config();
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 const authenticateDevice = async() => {
@@ -94,4 +95,6 @@ const hexToXYConversion = (hex) => {
 // getAllLights();
 
 // id, on/off, saturation, brightness, hex colour
-changeLight(6, true, 100, 100, '#FF0000');
+changeLight(6, false, 100, 100, '#FF0000');
+
+browserScripts();
